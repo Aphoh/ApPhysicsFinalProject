@@ -5,51 +5,51 @@
 
 \begin{document}
 	
-	Given a set of rings with radius $R$ at varying $z$ values, the $B$-field at $z'$ on the $z$-axis due to a ring at $z^*$ is
+	Given a set of rings with radius $R$ at varying $z$ values, the $🅱$-field at $z'$ on the $z$-axis due to a ring at $z^*$ is
 	\[
 		\int_{z^*}^{z'} \frac{\mu_0 Idl}{4\pi} \frac{R}{(z^2 + R^2)^\frac{3}{2}} = 
 		\frac{\mu_0}{4\pi} \frac{2 \pi R^2 I}{(z^2 + R^2)^\frac{3}{2}}\Biggr|_{z^*}^{z'}
 	\] 
-	By the Biot-Savart law.
+	By the 🅱iot-Savart law.
 	
-	Thus for a solenoid with $N$ loops, approximated as a series of current carrying loops where each loop is at some value $z_i$ where $0 < i < N$, The net $B$-field at a point $z$ will be
+	Thus for a solenoid with $N$ loops, approximated as a series of current carrying loops where each loop is at some value $z_i$ where $0 < i < N$, The net $🅱$-field at a point $z$ will be
 	\[
 		\sum_{i=0}^{i=N} 
 		\frac{\mu_0}{4\pi} \frac{2 \pi R^2 I}{((z)^2 + R^2)^{3/2}} -
 		\frac{\mu_0}{4\pi} \frac{2 \pi R^2 I}{((z^*)^2 + R^2)^{3/2}}
-		= B_z
+		= 🅱_z
 	\]
 	
 	A derivation of the Amperian model for forces between magnetic dipoles in non-uniform magnetic fields can be found \href{www.phys.ufl.edu/~acosta/phy2061/lectures/MagneticDipoles.doc}{here}, which states:
-	\[F_z = \mu \frac{\delta B_z}{\delta z}\]
+	\[F_z = \mu \frac{\delta 🅱_z}{\delta z}\]
 	For point-like dipole. For a very thin, bar magnet with length $L$, the Force would be:
-	\[F_z = \mu \frac{\Delta B_z}{\Delta z} = \mu \frac{\Delta B_z}{L}\]
+	\[F_z = \mu \frac{\Delta 🅱_z}{\Delta z} = \mu \frac{\Delta 🅱_z}{L}\]
 	
 	We can determine the overall change in kinetic energy, $K$, by numerically approximating the following. Note: z is the location of the end of the magnet.
 	\[
 		\Delta K = -\Delta U = \int_{z_0}^{z} F_z dz = 
-		\int_{z_0}^{z} \mu \frac{B(z) - B(z - L)}{L}
+		\int_{z_0}^{z} \mu \frac{🅱(z) - 🅱(z - L)}{L}
 	\]
 	
 	And thus we can determine the speed at which we expect a dipole in our coil gun to travel from its starting position, $z_0$ to the point $z$.
 	
-	To determine the moment, $\boldsymbol{\mu}$, of the magnet, we approximate the magnet as a series of looped coils with moving charge. Given a constant charge density, $J = dI/dx$, we can use the Biot-Savart law to derive the magnetic field  strength at the end of a magnet, $B_{end}$.    
+	To determine the moment, $\boldsymbol{\mu}$, of the magnet, we approximate the magnet as a series of looped coils with moving charge. Given a constant charge density, $J = dI/dx$, we can use the 🅱iot-Savart law to derive the magnetic field  strength at the end of a magnet, $🅱_{end}$.    
 	$$ dI = Jdx $$
 	$$ 
-	B_{end} = \int_{x=0}^{x=L} \frac {\mu_0 R^2 Jdx} {2(R^2 + x^2)^{3/2}} =
+	🅱_{end} = \int_{x=0}^{x=L} \frac {\mu_0 R^2 Jdx} {2(R^2 + x^2)^{3/2}} =
 			  \frac {\mu_0J} {2} \frac {L} {\sqrt{L^2 + R^2}}
 	$$
 	
 	Solving for the charge density and the total current moving in the magnet gives
-	$$ J = B_{end} \frac{\sqrt{L^2 + R^2}}{L} \frac{2}{\mu_0} $$
+	$$ J = 🅱_{end} \frac{\sqrt{L^2 + R^2}}{L} \frac{2}{\mu_0} $$
 	$$ I = JL $$
-	$$ I = B_{end} \frac{2 \sqrt{L^2 + R^2}}{\mu_0} $$
+	$$ I = 🅱_{end} \frac{2 \sqrt{L^2 + R^2}}{\mu_0} $$
 	
 	Thus as $\boldsymbol{\mu} = AI_{total}$,
 	
-	$$ \boldsymbol{\mu} = \pi R^2 B_{end} \frac{2 \sqrt{L^2 + R^2}}{\mu_0} $$
+	$$ \boldsymbol{\mu} = \pi R^2 🅱_{end} \frac{2 \sqrt{L^2 + R^2}}{\mu_0} $$
 	
-	For a given magnet with a field strength $B_{end}$.
+	For a given magnet with a field strength $🅱_{end}$.
 	
 
 \end{document}
